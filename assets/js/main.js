@@ -1,5 +1,5 @@
 /* =========================================================
-   Oualid Hmoudou — Portfolio · main.js
+   Oualid Hmoudou · Portfolio · main.js
    ========================================================= */
 (function () {
   'use strict';

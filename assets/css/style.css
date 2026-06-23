@@ -1,5 +1,5 @@
 /* =========================================================
-   Oualid Hmoudou — Portfolio
+   Oualid Hmoudou · Portfolio
    Design system: dark slate + cyan, premium & responsive
    ========================================================= */
 
@@ -210,6 +210,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .chip-1 { top: 6%; left: -8%; color: var(--violet); animation: floaty 5s ease-in-out infinite; }
 .chip-2 { top: 46%; right: -14%; color: var(--cyan); animation: floaty 6s ease-in-out infinite .8s; }
 .chip-3 { bottom: 4%; left: 2%; color: var(--green); animation: floaty 5.5s ease-in-out infinite .4s; }
+.chip-4 { top: 12%; right: -6%; color: var(--blue); animation: floaty 6.2s ease-in-out infinite .6s; }
 @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 
 .scroll-cue { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); width: 26px; height: 42px; border: 2px solid var(--border-2); border-radius: 14px; display: grid; justify-items: center; padding-top: 8px; }
