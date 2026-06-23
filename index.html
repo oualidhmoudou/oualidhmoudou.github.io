@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oualid Hmoudou — Master MIAGE · Développement · Data/BI · Gestion de projet</title>
+  <meta name="description" content="Portfolio d'Oualid Hmoudou, étudiant Master MIAGE à Amiens. Profil hybride : développement logiciel, Data/Business Intelligence et gestion de projet. Stages EPSF, Teatch, ORMVAH, NJT Group." />
+  <meta name="author" content="Oualid Hmoudou" />
+  <meta name="theme-color" content="#0a0f1e" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Oualid Hmoudou — Portfolio" />
+  <meta property="og:description" content="Profil hybride : Développement logiciel × Data/BI × Gestion de projet. Master MIAGE, Amiens." />
+  <meta property="og:url" content="https://oualidhmoudou.github.io" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a0f1e'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%2322d3ee' text-anchor='middle'>OH</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Decorative background -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#accueil" class="brand" aria-label="Accueil">
+        <span class="brand-mark">OH</span>
+        <span class="brand-name">Oualid<span class="dot">.</span>Hmoudou</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#apropos" class="nav-link">À propos</a>
+        <a href="#experiences" class="nav-link">Expériences</a>
+        <a href="#projets" class="nav-link">Projets</a>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/files/OUALID_HMOUDOU_CV.pdf" class="btn btn-sm btn-primary nav-cta" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          CV
+        </a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero section" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge">
+            <span class="pulse"></span>
+            Disponible — Alternance dès septembre 2026
+          </span>
+
+          <h1 class="hero-title">
+            Oualid <span class="grad-text">Hmoudou</span>
+          </h1>
+
+          <p class="hero-role">
+            Étudiant <strong>Master MIAGE</strong> ·
+            <span class="typed" id="typed"></span><span class="caret">|</span>
+          </p>
+
+          <p class="hero-pitch">
+            Profil hybride à la croisée du <strong>développement logiciel</strong>, de la
+            <strong>Data / Business Intelligence</strong> et de la <strong>gestion de projet</strong>.
+            Je conçois des applications de bout en bout, j'industrialise des tableaux de bord décisionnels
+            et je pilote des projets SI en méthode Agile — avec la donnée et la qualité au cœur de la valeur.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" class="ic"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              Me contacter
+            </a>
+            <a href="assets/files/OUALID_HMOUDOU_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" class="ic"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+              Télécharger le CV
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://linkedin.com/in/oualid-hmoudou-16880a225" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="ic-fill"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 9.5H5.67V18h2.67V9.5zM7 5.88a1.55 1.55 0 100 3.1 1.55 1.55 0 000-3.1zM18.33 18v-4.66c0-2.49-1.33-3.65-3.1-3.65a2.68 2.68 0 00-2.43 1.34V9.5h-2.67V18h2.67v-4.39c0-1.16.22-2.28 1.65-2.28 1.41 0 1.43 1.32 1.43 2.36V18h2.45z"/></svg>
+            </a>
+            <a href="mailto:oualidhmoudou@gmail.com" aria-label="Email" class="social-link">
+              <svg viewBox="0 0 24 24" class="ic"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+            </a>
+            <a href="tel:+33620244227" aria-label="Téléphone" class="social-link">
+              <svg viewBox="0 0 24 24" class="ic"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 6a2 2 0 012-2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-wrap">
+            <div class="avatar-glow"></div>
+            <div class="avatar-ring"></div>
+            <img src="assets/img/oualid.jpeg" alt="Oualid Hmoudou" class="avatar" />
+            <span class="float-chip chip-1">Power BI</span>
+            <span class="float-chip chip-2">.NET / Vue</span>
+            <span class="float-chip chip-3">IA & Agile</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#apropos" class="scroll-cue" aria-label="Descendre">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== PILLARS ===================== -->
+    <section class="section pillars-section">
+      <div class="container">
+        <div class="pillars">
+          <article class="pillar reveal">
+            <div class="pillar-ic ic-cyan">
+              <svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+            </div>
+            <h3>Développement Logiciel</h3>
+            <p>Applications fullstack de bout en bout, API REST, Clean Architecture & DevOps.</p>
+            <div class="pillar-tags"><span>Java</span><span>C#/.NET</span><span>Vue / React</span><span>API REST</span></div>
+          </article>
+          <article class="pillar reveal">
+            <div class="pillar-ic ic-violet">
+              <svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3M20 16v-7"/></svg>
+            </div>
+            <h3>Data & Business Intelligence</h3>
+            <p>Tableaux de bord décisionnels, mesures DAX, reporting industrialisé & IA.</p>
+            <div class="pillar-tags"><span>Power BI</span><span>DAX</span><span>SQL</span><span>Python / ML</span></div>
+          </article>
+          <article class="pillar reveal">
+            <div class="pillar-ic ic-green">
+              <svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M21 12v6a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2h11"/></svg>
+            </div>
+            <h3>Gestion de Projet</h3>
+            <p>Pilotage Agile/Scrum, suivi QCD, animation des parties prenantes & reporting.</p>
+            <div class="pillar-tags"><span>Agile/Scrum</span><span>Jira</span><span>MS Project</span><span>Reporting</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section class="section" id="apropos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 — Profil</span>
+          <h2 class="section-title">À propos</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Je suis <strong>Oualid Hmoudou</strong>, étudiant en <strong>Master MIAGE</strong> (Méthodes Informatiques
+              Appliquées à la Gestion des Entreprises) à l'Université de Picardie Jules Verne, à Amiens.
+            </p>
+            <p>
+              Mon parcours conjugue une solide base d'<strong>ingénierie logicielle</strong> (Java, C#/.NET, PHP, Vue/React,
+              API REST, DevOps) et une expertise croissante en <strong>Data / Business Intelligence</strong> (Power BI, DAX,
+              SQL, Python). Le MIAGE est précisément le pont entre l'informatique et le pilotage des systèmes d'information —
+              c'est cette polyvalence que je mets au service d'équipes exigeantes.
+            </p>
+            <p>
+              Mon engagement à la <strong>Croix-Rouge Française</strong> comme équipier secouriste m'a forgé à la rigueur
+              opérationnelle, à la gestion du stress et au sens du collectif. Curieux, autonome et organisé.
+            </p>
+
+            <div class="quick-facts">
+              <div class="fact"><span class="fact-k">Localisation</span><span class="fact-v">Amiens, France</span></div>
+              <div class="fact"><span class="fact-k">Disponibilité</span><span class="fact-v">Alternance — sept. 2026</span></div>
+              <div class="fact"><span class="fact-k">Langues</span><span class="fact-v">FR C1 · EN C1 · AR natif · ES A1</span></div>
+              <div class="fact"><span class="fact-k">Permis</span><span class="fact-v">B — véhiculé</span></div>
+            </div>
+          </div>
+
+          <aside class="about-side">
+            <div class="stats reveal">
+              <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Expériences en entreprise</span></div>
+              <div class="stat"><span class="stat-num" data-count="7" data-suffix="+">0</span><span class="stat-label">Projets significatifs</span></div>
+              <div class="stat"><span class="stat-num" data-count="5" data-suffix="+">0</span><span class="stat-label">Ans à coder</span></div>
+              <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Langues parlées</span></div>
+            </div>
+
+            <div class="timeline-edu reveal">
+              <h3 class="side-title">
+                <svg viewBox="0 0 24 24" class="ic"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+                Formation
+              </h3>
+              <ul class="edu-list">
+                <li>
+                  <span class="edu-period">2025 — en cours</span>
+                  <span class="edu-deg">Master MIAGE (M1)</span>
+                  <span class="edu-school">Université de Picardie Jules Verne, Amiens</span>
+                </li>
+                <li>
+                  <span class="edu-period">2023 — 2025</span>
+                  <span class="edu-deg">Licence Informatique</span>
+                  <span class="edu-school">Université de Picardie Jules Verne, Amiens</span>
+                </li>
+                <li>
+                  <span class="edu-period">2021 — 2023</span>
+                  <span class="edu-deg">DUT Génie Informatique</span>
+                  <span class="edu-school">EST Essaouira, Maroc</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="engagement reveal">
+              <h3 class="side-title">
+                <svg viewBox="0 0 24 24" class="ic"><path d="M12 21C7 17 4 13 4 9a4 4 0 018-1 4 4 0 018 1c0 4-3 8-8 12z"/></svg>
+                Engagement
+              </h3>
+              <p><strong>Croix-Rouge Française</strong> — Équipier Secouriste<br><span class="muted">Département de la Somme · depuis mars 2024</span></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPÉRIENCES ===================== -->
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — Parcours</span>
+          <h2 class="section-title">Expériences professionnelles</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- EPSF -->
+          <article class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div class="tl-logo"><img src="assets/img/logos/epsf.png" alt="EPSF" /></div>
+                <div class="tl-meta">
+                  <h3 class="tl-role">Analyste BI <span class="tl-current">En cours</span></h3>
+                  <p class="tl-company">EPSF — Établissement Public de Sécurité Ferroviaire · Direction des Contrôles</p>
+                  <p class="tl-info"><span>juin 2026 — aujourd'hui</span> · <span>Amiens · Sur site</span></p>
+                </div>
+              </div>
+              <ul class="tl-list">
+                <li>Industrialisation des tableaux de bord de contrôle ferroviaire sous <strong>Power BI</strong>.</li>
+                <li>Conception de mesures <strong>DAX</strong> complexes pour l'analyse et le suivi des indicateurs de contrôle.</li>
+                <li>Automatisation et standardisation des reportings à destination des équipes de contrôle.</li>
+              </ul>
+              <div class="tags"><span>Power BI</span><span>DAX avancé</span><span>Power Query</span></div>
+            </div>
+          </article>
+
+          <!-- TEATCH -->
+          <article class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div class="tl-logo logo-pad"><img src="assets/img/logos/teatch.png" alt="Teatch" /></div>
+                <div class="tl-meta">
+                  <h3 class="tl-role">Product Engineer — Développement Fullstack</h3>
+                  <p class="tl-company">Teatch · Stage</p>
+                  <p class="tl-info"><span>avr. 2026 — juin 2026</span> · <span>Paris · Hybride</span></p>
+                </div>
+              </div>
+              <ul class="tl-list">
+                <li><strong>Refonte complète</strong> de la plateforme web (front & back) avec une approche produit : audit de l'existant, recueil des besoins, priorisation et mise en œuvre.</li>
+                <li><strong>Développement fullstack</strong> : conception des composants, design d'<strong>API REST</strong>, modélisation de la base de données.</li>
+                <li><strong>Intégration IA</strong> : automatisation de processus métier via des fonctionnalités d'intelligence artificielle.</li>
+                <li><strong>Qualité</strong> : versioning Git, tests unitaires, code review, déploiement.</li>
+              </ul>
+              <div class="tags"><span>Fullstack</span><span>API REST</span><span>IA</span><span>Git</span></div>
+            </div>
+          </article>
+
+          <!-- ORMVAH -->
+          <article class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div class="tl-logo logo-pad"><img src="assets/img/logos/ormvah.png" alt="ORMVAH" /></div>
+                <div class="tl-meta">
+                  <h3 class="tl-role">Développeur Web & Assistant Chef de Projet</h3>
+                  <p class="tl-company">ORMVAH · Stage · Marrakech</p>
+                  <p class="tl-info"><span>avr. 2023 — juin 2023</span> · <span>Marrakech, Maroc</span></p>
+                </div>
+              </div>
+              <ul class="tl-list">
+                <li>Analyse des besoins et rédaction des spécifications fonctionnelles pour la digitalisation d'un processus interne.</li>
+                <li>Application web complète sous <strong>Laravel</strong> ; conception et optimisation du schéma <strong>MySQL</strong> (vues, procédures stockées).</li>
+                <li>Administration réseau, déploiement, formation des utilisateurs finaux et documentation technique.</li>
+              </ul>
+              <div class="tags"><span>Laravel</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <!-- NJT -->
+          <article class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div class="tl-logo logo-pad"><img src="assets/img/logos/njt.jpg" alt="NJT Group" /></div>
+                <div class="tl-meta">
+                  <h3 class="tl-role">Développeur Web</h3>
+                  <p class="tl-company">NJT Group · Stage de découverte</p>
+                  <p class="tl-info"><span>juin 2022 — août 2022</span> · <span>Maroc</span></p>
+                </div>
+              </div>
+              <ul class="tl-list">
+                <li>Première expérience professionnelle : application web de gestion des formations développée <strong>from scratch</strong>.</li>
+                <li>Conception de la base <strong>MySQL</strong> et back-end en <strong>PHP natif</strong> ; rapports de suivi et tableaux de bord pour le pilotage de l'activité.</li>
+              </ul>
+              <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 — Réalisations</span>
+          <h2 class="section-title">Projets significatifs</h2>
+        </div>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">Tous</button>
+          <button class="filter" data-filter="dev">Développement</button>
+          <button class="filter" data-filter="data">Data & BI</button>
+          <button class="filter" data-filter="ia">IA</button>
+          <button class="filter" data-filter="gestion">Gestion de projet</button>
+        </div>
+
+        <div class="projects" id="projects">
+          <article class="project-card reveal" data-cat="dev gestion">
+            <div class="pc-top"><span class="pc-ic ic-cyan"><svg viewBox="0 0 24 24"><path d="M3 7h18v12H3zM3 7l2-3h14l2 3M9 19v2M15 19v2"/></svg></span><span class="pc-year">2025 — 2026</span></div>
+            <h3>Plateforme de Billetterie en ligne</h3>
+            <p>Application fullstack menée en équipe Agile/Scrum : modélisation BDD, API REST documentée (Swagger), intégration front/back, pipeline CI/CD GitHub Actions.</p>
+            <div class="tags"><span>C#/.NET 8</span><span>Vue.js 3</span><span>API REST</span><span>CI/CD</span></div>
+          </article>
+
+          <article class="project-card reveal" data-cat="data gestion">
+            <div class="pc-top"><span class="pc-ic ic-violet"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3M20 16v-7"/></svg></span><span class="pc-year">2025</span></div>
+            <h3>Automatisation de workflows & Reporting</h3>
+            <p>Digitalisation d'un processus métier (soutenances) via Power Automate, SharePoint et Teams. Tableaux de bord Power BI avec modélisation et mesures DAX.</p>
+            <div class="tags"><span>Power Platform</span><span>Power BI</span><span>DAX</span><span>SharePoint</span></div>
+          </article>
+
+          <article class="project-card reveal" data-cat="ia dev">
+            <div class="pc-top"><span class="pc-ic ic-green"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 013 3 3 3 0 010 6 3 3 0 01-3 3 3 3 0 01-3-3 3 3 0 010-6 3 3 0 013-3zM12 14v6M8 20h8"/></svg></span><span class="pc-year">2025</span></div>
+            <h3>IA Tic-Tac-Toe — Agent Intelligent</h3>
+            <p>Agent à apprentissage par renforcement (Q-learning). Modélisation de l'environnement, logique d'entraînement en Python et évaluation des performances.</p>
+            <div class="tags"><span>Python</span><span>Q-learning</span><span>Machine Learning</span></div>
+          </article>
+
+          <article class="project-card reveal" data-cat="dev">
+            <div class="pc-top"><span class="pc-ic ic-blue"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 9h16M8 5v4"/></svg></span><span class="pc-year">Projet académique</span></div>
+            <h3>Gestion de scolarisation MIAGE</h3>
+            <p>Backend REST en Clean Architecture multi-tiers ; gestion des entités métier, relations entre données et interfaces dynamiques. Accent sur la cohérence des données.</p>
+            <div class="tags"><span>C#/.NET</span><span>React</span><span>Clean Architecture</span></div>
+          </article>
+
+          <article class="project-card reveal" data-cat="dev">
+            <div class="pc-top"><span class="pc-ic ic-orange"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v12l-8 4-8-4V6zM12 12l8-4M12 12v10M12 12L4 8"/></svg></span><span class="pc-year">Projet académique</span></div>
+            <h3>Gestion de Prêt de Matériel</h3>
+            <p>Architecture backend SOLID avec catégorisation arborescente (Composite, Decorator), CRUD complet et API modulaire. 8 design patterns implémentés.</p>
+            <div class="tags"><span>C#</span><span>.NET 9</span><span>Design Patterns</span><span>SOLID</span></div>
+          </article>
+
+          <article class="project-card reveal" data-cat="dev">
+            <div class="pc-top"><span class="pc-ic ic-cyan"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span><span class="pc-year">Projet académique</span></div>
+            <h3>Commande en ligne multi-clients</h3>
+            <p>Architecture Java avec multithreading et design patterns (Observer, State, Singleton) pour la gestion simultanée de requêtes et la synchronisation temps réel.</p>
+            <div class="tags"><span>Java</span><span>Multithreading</span><span>Design Patterns</span></div>
+          </article>
+
+          <article class="project-card reveal" data-cat="gestion dev">
+            <div class="pc-top"><span class="pc-ic ic-green"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M21 12v6a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2h11"/></svg></span><span class="pc-year">Chef de projet</span></div>
+            <h3>Gestion d'Association Universitaire</h3>
+            <p>Coordination d'une équipe de développement : planification des sprints, gestion des livraisons, documentation technique et formation des utilisateurs finaux.</p>
+            <div class="tags"><span>Laravel</span><span>Agile</span><span>Coordination</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section class="section" id="competences">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 — Stack</span>
+          <h2 class="section-title">Compétences techniques</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-cyan"></span>Langages</h3>
+            <div class="chips"><span>Java</span><span>C# / .NET</span><span>PHP</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-blue"></span>Frameworks & Web</h3>
+            <div class="chips"><span>Spring Boot</span><span>Vue.js</span><span>React</span><span>Symfony</span><span>Laravel</span><span>ASP.NET</span><span>Node.js</span><span>API REST</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-violet"></span>Data & Business Intelligence</h3>
+            <div class="chips"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Python / ML</span><span>Q-learning</span><span>IA générative (LLM)</span><span>Modélisation</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-orange"></span>Bases de données</h3>
+            <div class="chips"><span>MySQL</span><span>PostgreSQL</span><span>Oracle</span><span>SQL Server</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-green"></span>DevOps & Outils</h3>
+            <div class="chips"><span>Git / GitLab</span><span>GitHub Actions</span><span>Docker</span><span>Jenkins</span><span>Maven</span><span>Linux / Bash</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-cyan"></span>Power Platform</h3>
+            <div class="chips"><span>Power Automate</span><span>Power Apps</span><span>SharePoint</span><span>Teams</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-blue"></span>Architecture & Qualité</h3>
+            <div class="chips"><span>Clean Architecture</span><span>SOLID</span><span>Design Patterns</span><span>Tests unitaires</span><span>Code review</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <h3><span class="sc-dot ic-violet"></span>Gestion de projet</h3>
+            <div class="chips"><span>Agile / Scrum</span><span>Jira</span><span>MS Project</span><span>Suivi QCD</span><span>Reporting / KPIs</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 — Échangeons</span>
+          <h2 class="section-title">Me contacter</h2>
+        </div>
+
+        <div class="contact-wrap reveal">
+          <p class="contact-lead">
+            À la recherche active d'une <strong>alternance</strong> (dès septembre 2026) en développement logiciel,
+            Data/BI ou gestion de projet SI. N'hésitez pas à me contacter — je réponds rapidement.
+          </p>
+
+          <div class="contact-cards">
+            <a href="mailto:oualidhmoudou@gmail.com" class="contact-card">
+              <span class="cc-ic ic-cyan"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+              <span class="cc-k">Email</span>
+              <span class="cc-v">oualidhmoudou@gmail.com</span>
+            </a>
+            <a href="tel:+33620244227" class="contact-card">
+              <span class="cc-ic ic-green"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 6a2 2 0 012-2z"/></svg></span>
+              <span class="cc-k">Téléphone</span>
+              <span class="cc-v">+33 6 20 24 42 27</span>
+            </a>
+            <a href="https://linkedin.com/in/oualid-hmoudou-16880a225" target="_blank" rel="noopener" class="contact-card">
+              <span class="cc-ic ic-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 9.5H5.67V18h2.67V9.5zM7 5.88a1.55 1.55 0 100 3.1 1.55 1.55 0 000-3.1zM18.33 18v-4.66c0-2.49-1.33-3.65-3.1-3.65a2.68 2.68 0 00-2.43 1.34V9.5h-2.67V18h2.67v-4.39c0-1.16.22-2.28 1.65-2.28 1.41 0 1.43 1.32 1.43 2.36V18h2.45z"/></svg></span>
+              <span class="cc-k">LinkedIn</span>
+              <span class="cc-v">/in/oualid-hmoudou</span>
+            </a>
+            <div class="contact-card no-link">
+              <span class="cc-ic ic-orange"><svg viewBox="0 0 24 24"><path d="M12 21C7 17 4 13 4 9a8 8 0 0116 0c0 4-3 8-8 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <span class="cc-k">Localisation</span>
+              <span class="cc-v">Amiens, France</span>
+            </div>
+          </div>
+
+          <a href="assets/files/OUALID_HMOUDOU_CV.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="ic"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Oualid<span class="dot">.</span>Hmoudou</span>
+      <p class="footer-copy">© <span id="year"></span> Oualid Hmoudou — Conçu et développé avec soin.</p>
+      <a href="#accueil" class="footer-top" aria-label="Haut de page">
+        <svg viewBox="0 0 24 24" class="ic"><path d="M12 19V5m0 0l-6 6m6-6l6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
